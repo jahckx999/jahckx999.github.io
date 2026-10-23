@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Painel · KAELENVASH</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.github.com; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/vitrine.css">
+<link rel="stylesheet" href="painel.css">
+</head>
+<body class="painel">
+<div class="envelope">
+  <header class="p-topo">
+    <img src="../assets/favicon.svg" alt="" width="40" height="40">
+    <div><div class="p-marca ouro">KAELENVASH</div><small>Painel da Vitrine</small></div>
+    <div class="p-acoes">
+      <a class="p-btn sec" href="../" target="_blank" rel="noopener">Ver site ↗</a>
+      <button class="p-btn sec" id="sair" hidden>Sair</button>
+    </div>
+  </header>
+
+  <!-- LOGIN -->
+  <section id="tela-login" class="p-cartao p-login">
+    <h1 class="ouro">Entrar no painel</h1>
+    <p>Só quem tem a <b>chave do GitHub</b> consegue alterar a vitrine. A chave fica guardada apenas neste aparelho — nunca vai para o site.</p>
+    <label>Chave de acesso (token do GitHub)
+      <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+    </label>
+    <label class="p-check"><input type="checkbox" id="lembrar"> Lembrar neste aparelho</label>
+    <button class="p-btn" id="entrar">Entrar</button>
+    <p class="p-msg" id="msg-login" role="status"></p>
+    <details>
+      <summary>Como criar a chave (1 vez só, 2 minutos)</summary>
+      <ol>
+        <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com › Fine-grained token</a>.</li>
+        <li><b>Nome:</b> Painel Kaelenvash · <b>Validade:</b> 1 ano.</li>
+        <li><b>Repository access:</b> Only select repositories → <code>jahckx999.github.io</code>.</li>
+        <li><b>Permissions › Contents:</b> Read and write.</li>
+        <li>Clique em <b>Generate token</b>, copie e cole aqui.</li>
+      </ol>
+      <p>Se um dia perder o celular, é só apagar a chave no GitHub — o painel trava na hora.</p>
+    </details>
+  </section>
+
+  <!-- EDITOR -->
+  <section id="tela-editor" hidden>
+    <div class="p-barra">
+      <span id="status" class="p-status" role="status">Tudo salvo</span>
+      <div class="p-acoes">
+        <button class="p-btn sec" id="exportar" title="Baixar cópia de segurança">Backup ⤓</button>
+        <label class="p-btn sec" title="Restaurar de um backup">Restaurar ⤒<input type="file" id="importar" accept="application/json" hidden></label>
+        <button class="p-btn" id="publicar" disabled>Publicar na vitrine ✦</button>
+      </div>
+    </div>
+
+    <div class="p-layout">
+      <div class="p-col">
+        <div class="p-cartao">
+          <h2>Identidade</h2>
+          <div class="p-grid2">
+            <label>Título<input id="cfg-titulo" maxlength="40"></label>
+            <label>Frase de abertura<input id="cfg-frase" maxlength="80"></label>
+            <label>WhatsApp (com DDI e DDD)<input id="cfg-whatsapp" inputmode="tel" placeholder="5591999999999"></label>
+            <label>Mensagem automática<input id="cfg-msg" maxlength="140"></label>
+          </div>
+        </div>
+
+        <div class="p-cartao">
+          <div class="p-cab"><h2>Banners da vitrine</h2><button class="p-btn" id="novo">+ Adicionar site ou rede</button></div>
+          <ul class="p-lista" id="lista"></ul>
+        </div>
+
+        <div class="p-cartao">
+          <h2>Categorias</h2>
+          <ul class="p-lista" id="cats"></ul>
+          <button class="p-btn sec" id="nova-cat">+ Nova categoria</button>
+        </div>
+      </div>
+
+      <div class="p-col p-previa">
+        <div class="p-cartao">
+          <h2>Prévia ao vivo</h2>
+          <div id="previa" class="grade redes"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <dialog id="dlg" class="p-dlg">
+    <form method="dialog" id="form">
+      <h2 id="dlg-titulo">Novo banner</h2>
+      <label>Nome *<input name="nome" required maxlength="40" placeholder="Ex.: Minha Loja"></label>
+      <label>Descrição curta<input name="descricao" maxlength="140" placeholder="Uma frase que convide a clicar"></label>
+      <label>Link *<input name="url" required placeholder="https://…  ou  /meu-site/  ou  whatsapp"></label>
+      <small class="p-dica">O tema é escolhido sozinho pelo link (YouTube, Instagram, TikTok…). Para o WhatsApp, escreva só <code>whatsapp</code>.</small>
+      <div class="p-grid2">
+        <label>Categoria<select name="categoria" id="f-cat"></select></label>
+        <label>Tema visual<select name="tema" id="f-tema"></select></label>
+        <label>Mandala (força)<select name="mandala" id="f-mandala"></select></label>
+        <label>Texto do botão<input name="cta" maxlength="24" placeholder="Automático"></label>
+      </div>
+      <div class="p-checks">
+        <label class="p-check"><input type="checkbox" name="ativo" checked> Ativo (desmarque para “Em breve”)</label>
+        <label class="p-check"><input type="checkbox" name="destaque"> Destaque (banner grande)</label>
+        <label class="p-check"><input type="checkbox" name="oculto"> Esconder do site</label>
+        <label class="p-check"><input type="checkbox" name="corOn" id="f-coron"> Cores personalizadas</label>
+      </div>
+      <div class="p-grid3" id="f-cores" hidden>
+        <label>Cor 1<input type="color" name="c1" value="#22093F"></label>
+        <label>Cor 2<input type="color" name="c2" value="#7B3FBF"></label>
+        <label>Brilho<input type="color" name="acento" value="#E4BE55"></label>
+      </div>
+      <div id="f-previa" class="p-fprevia"></div>
+      <menu>
+        <button class="p-btn sec" value="cancel" formnovalidate>Cancelar</button>
+        <button class="p-btn" value="ok" id="f-ok">Salvar banner</button>
+      </menu>
+    </form>
+  </dialog>
+</div>
+<script src="../assets/vitrine.js"></script>
+<script src="painel.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* KAELENVASH — identidade: ouro + roxo profundo, Cinzel, céu estrelado */
+[hidden]{display:none!important}
+:root{
+  --roxo-0:#07010F; --roxo-1:#13042A; --roxo-2:#22093F; --roxo-3:#3A1468; --violeta:#7B3FBF;
+  --ouro-1:#FFF2C2; --ouro-2:#E4BE55; --ouro-3:#A8781B;
+  --texto:#EFE6FF; --texto-2:#BFB0DA; --linha:rgba(228,190,85,.22);
+  --serif:'Cinzel',Georgia,serif; --sans:'Cormorant Garamond','Georgia',serif; --ui:'Manrope',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--roxo-0)}
+body{min-height:100vh;color:var(--texto);font-family:var(--ui);background:radial-gradient(ellipse 120% 80% at 50% 0%,#2A0D52 0%,var(--roxo-1) 45%,var(--roxo-0) 100%) fixed;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+#ceu{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.envelope{position:relative;z-index:1;overflow-x:clip}
+.ouro{background:linear-gradient(120deg,var(--ouro-1) 0%,var(--ouro-2) 45%,var(--ouro-3) 75%,var(--ouro-1) 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:reluz 9s linear infinite}
+@keyframes reluz{to{background-position:200% center}}
+
+/* ----- topo ----- */
+.heroi{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 16px 32px;position:relative}
+.selo{position:relative;width:min(70vw,420px);aspect-ratio:1;margin:min(10vw,60px) 0 min(17vw,96px)}
+.selo .aura{position:absolute;inset:-18%;border-radius:50%;background:radial-gradient(circle,rgba(255,231,163,.28) 0%,rgba(123,63,191,.22) 38%,transparent 68%);filter:blur(8px);animation:pulsa 6s ease-in-out infinite}
+.selo img.mestra{position:absolute;inset:0;width:100%;height:100%;animation:gira 160s linear infinite;filter:drop-shadow(0 0 24px rgba(228,190,85,.35))}
+.orbita{position:absolute;inset:-14%;animation:gira 90s linear infinite reverse}
+.orbita span{position:absolute;width:12%;aspect-ratio:1;transform:translate(-50%,-50%);opacity:.85}
+.orbita svg{width:100%;height:100%;animation:gira 30s linear infinite;filter:drop-shadow(0 0 6px rgba(228,190,85,.5))}
+@keyframes gira{to{transform:rotate(360deg)}}
+.orbita span svg{animation:none}
+@keyframes pulsa{50%{transform:scale(1.06);opacity:.75}}
+h1.marca{font-family:var(--serif);font-weight:600;font-size:clamp(2.3rem,9vw,5.6rem);letter-spacing:.14em;line-height:1;padding-left:.14em}
+.frase{font-family:var(--serif);font-size:clamp(.82rem,2.6vw,1.15rem);letter-spacing:.32em;text-transform:uppercase;color:var(--texto-2);margin-top:18px;padding-left:.32em}
+.dominio{margin-top:10px;font-size:.78rem;letter-spacing:.3em;color:var(--ouro-2);opacity:.75}
+.descer{margin-top:44px;display:inline-flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;font-size:.72rem;letter-spacing:.3em;color:var(--texto-2);text-transform:uppercase}
+.descer i{width:1px;height:46px;background:linear-gradient(var(--ouro-2),transparent);animation:desce 2.4s ease-in-out infinite}
+@keyframes desce{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ----- filtros ----- */
+.filtros{position:sticky;top:0;z-index:5;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:14px 16px;background:linear-gradient(rgba(7,1,15,.92),rgba(7,1,15,.7));backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.filtros button{font:600 .78rem var(--ui);letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2);background:transparent;border:1px solid var(--linha);border-radius:999px;padding:9px 16px;cursor:pointer;transition:.25s}
+.filtros button:hover{color:var(--ouro-1);border-color:var(--ouro-2)}
+.filtros button[aria-pressed="true"]{color:var(--roxo-1);background:linear-gradient(120deg,var(--ouro-1),var(--ouro-2));border-color:transparent}
+
+/* ----- seções ----- */
+main{max-width:1240px;margin:0 auto;padding:0 16px 40px}
+.secao{padding:64px 0 8px}
+.secao-topo{text-align:center;margin-bottom:34px}
+.secao-topo h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,4.6vw,2.4rem);letter-spacing:.1em}
+.secao-topo p{margin-top:10px;color:var(--texto-2);font-family:var(--sans);font-size:1.15rem;font-style:italic}
+.ornamento{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px auto 0;color:var(--ouro-2)}
+.ornamento::before,.ornamento::after{content:"";height:1px;width:min(18vw,120px);background:linear-gradient(90deg,transparent,var(--ouro-2),transparent)}
+.ornamento svg{width:26px;height:26px}
+
+.grade{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,var(--min,300px)),1fr))}
+.grade.mundos{--min:340px}
+.grade.redes{--min:250px}
+.grade.outros{--min:300px}
+
+/* ----- banner ----- */
+.banner{position:relative;display:block;overflow:hidden;border-radius:22px;text-decoration:none;color:#fff;min-height:250px;isolation:isolate;border:1px solid rgba(255,242,194,.18);box-shadow:0 18px 50px -20px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.04);transform:translateY(20px);opacity:0;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .4s,opacity .6s;transition-delay:calc(var(--i) * 60ms)}
+.banner.visivel{transform:none;opacity:1}
+.grade.redes .banner{min-height:210px}
+.banner.destaque{grid-column:1/-1;min-height:320px}
+.banner.destaque .b-mandala{width:min(62%,520px);right:-4%}
+.banner.destaque .b-desc{max-width:46ch}
+.b-fundo{position:absolute;inset:0;background:var(--fundo);z-index:-3}
+.b-fundo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,1,15,.55) 0%,transparent 62%),radial-gradient(ellipse at 100% 0%,rgba(255,231,163,.18),transparent 55%),linear-gradient(180deg,transparent 30%,rgba(7,1,15,.78) 100%)}
+.motivo{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.b-mandala{position:absolute;right:-18%;top:50%;width:78%;aspect-ratio:1;transform:translateY(-50%);z-index:-1;opacity:.8;filter:drop-shadow(0 0 14px rgba(228,190,85,.35));transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .4s}
+.grade.redes .b-mandala{width:92%;right:-30%}
+.b-mandala svg{width:100%;height:100%}
+.gira-lento{animation:gira 120s linear infinite}
+.b-brilho{position:absolute;inset:0;z-index:2;background:linear-gradient(105deg,transparent 35%,rgba(255,242,194,.22) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s;pointer-events:none}
+.b-conteudo{position:relative;z-index:3;display:flex;flex-direction:column;height:100%;min-height:inherit;padding:22px 22px 18px}
+.b-topo{display:flex;align-items:center;gap:10px}
+.b-icone{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:var(--acento);background:rgba(7,1,15,.45);border:1px solid rgba(255,242,194,.25);backdrop-filter:blur(4px)}
+.b-icone svg{width:22px;height:22px}
+.b-rotulo{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--acento)}
+.b-nome{margin-top:auto;padding-top:28px;font-family:var(--serif);font-weight:600;font-size:clamp(1.4rem,3.4vw,1.9rem);letter-spacing:.05em;line-height:1.1;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.banner.destaque .b-nome{font-size:clamp(1.8rem,4.6vw,2.7rem)}
+.b-desc{margin-top:8px;font-family:var(--sans);font-size:1.08rem;line-height:1.35;color:rgba(255,255,255,.86);max-width:34ch;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.b-rodape{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,242,194,.18)}
+.b-forca{font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro-1);opacity:.9}
+.b-cta{font-size:.82rem;font-weight:700;letter-spacing:.06em;color:var(--roxo-1);background:linear-gradient(120deg,var(--ouro-1),var(--ouro-2));padding:8px 14px;border-radius:999px;white-space:nowrap}
+.b-cta b{display:inline-block;transition:transform .3s}
+.banner.embreve{cursor:default;filter:saturate(.55)}
+.banner.embreve .b-cta{background:rgba(255,255,255,.12);color:var(--texto-2);border:1px dashed rgba(255,242,194,.35)}
+a.banner:hover,a.banner:focus-visible{transform:translateY(-6px);border-color:rgba(255,242,194,.55);box-shadow:0 26px 60px -18px rgba(123,63,191,.65),0 0 0 1px rgba(228,190,85,.35)}
+a.banner:hover .b-mandala{transform:translateY(-50%) scale(1.08) rotate(12deg);opacity:1}
+a.banner:hover .b-brilho{transform:translateX(120%)}
+a.banner:hover .b-cta b{transform:translateX(4px)}
+a.banner:focus-visible{outline:2px solid var(--ouro-2);outline-offset:3px}
+.sweep{animation:gira 5s linear infinite}
+
+/* ----- forças ----- */
+.forcas{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);max-width:980px;margin:0 auto}
+.forca{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 14px;border-radius:18px;border:1px solid var(--linha);background:linear-gradient(180deg,rgba(58,20,104,.35),rgba(19,4,42,.25));transition:.4s}
+.forca:hover{border-color:var(--ouro-2);transform:translateY(-4px)}
+.forca svg{width:86px;height:86px;filter:drop-shadow(0 0 10px rgba(228,190,85,.35));transition:transform 1.2s}
+.forca:hover svg{transform:rotate(60deg) scale(1.06)}
+.forca h3{font-family:var(--serif);font-size:1rem;letter-spacing:.14em;color:var(--ouro-1)}
+.forca small{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--violeta);filter:brightness(1.7)}
+.forca p{font-family:var(--sans);font-size:1rem;color:var(--texto-2);line-height:1.3}
+
+footer{position:relative;z-index:1;text-align:center;padding:56px 16px 40px;border-top:1px solid var(--linha);margin-top:40px;color:var(--texto-2);font-size:.8rem;letter-spacing:.12em}
+footer img{width:54px;height:54px;opacity:.85;margin-bottom:12px}
+footer .marca-r{font-family:var(--serif);font-size:1.1rem;letter-spacing:.3em;margin-bottom:6px}
+.vazio{text-align:center;color:var(--texto-2);padding:30px;font-style:italic}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.banner{opacity:1;transform:none}}
+.forca div{display:flex;flex-direction:column;gap:6px}
+@media (max-width:620px){.forcas{grid-template-columns:1fr}.forca{flex-direction:row;text-align:left;align-items:center}.forca svg{width:64px;height:64px;flex:none}.forca div{display:flex;flex-direction:column;gap:3px}}
+@media (max-width:520px){.filtros{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.filtros button{flex:none;font-size:.7rem;padding:8px 13px}.b-mandala{opacity:.6}}
