@@ -1,11 +1,10 @@
 /* Checkout do Estúdio Kaelenvash — Pix principal.
-   Link: kaelenvash.com/pagar/?v=1200&d=Landing%20page&ref=EK1A2B&n=Nome&k=mp
-   v = valor em reais · d = serviço · ref = código do pedido · n = cliente · k = conta (mp ou nu) */
+   Link: kaelenvash.com/pagar/?v=1200&d=Landing%20page&ref=EK1A2B&n=Nome
+   v = valor em reais · d = serviço · ref = código do pedido · n = cliente */
 (function () {
   'use strict';
 
   var CHAVES = [
-    { id: 'mp', banco: 'Mercado Pago', tipo: 'Celular', chave: '+5598985802413', mostra: '+55 (98) 98580-2413' },
     { id: 'nu', banco: 'Nubank', tipo: 'E-mail', chave: 'kaelenvash999@gmail.com', mostra: 'kaelenvash999@gmail.com' }
   ];
   /* Outras formas: aparecem para o cliente só quando "ativo: true" e com o link preenchido. */
@@ -91,7 +90,8 @@
   else $('r-livre').hidden = false;
   if (ref) { $('r-ref').textContent = 'Pedido ' + ref; $('r-ref').hidden = false; }
 
-  /* contas Pix */
+  /* contas Pix (o seletor só aparece com mais de uma conta) */
+  if (CHAVES.length < 2) $('chaves').hidden = true;
   CHAVES.forEach(function (c) {
     var b = document.createElement('button');
     b.type = 'button'; b.className = 'conta'; b.dataset.id = c.id; b.setAttribute('role', 'tab');
