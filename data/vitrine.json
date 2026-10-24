@@ -2,12 +2,20 @@
   "config": {
     "titulo": "KAELENVASH",
     "frase": "Um universo de mundos conectados",
-    "whatsapp": "",
+    "whatsapp": "5598985802413",
     "mensagemWhatsapp": "Olá! Vim pelo kaelenvash.com ✨"
   },
   "categorias": [
-    { "id": "mundos", "nome": "Meus Mundos", "descricao": "Portais criados para expandir sua consciência, sua mente e sua prosperidade." },
-    { "id": "redes", "nome": "Redes Kaelenvash", "descricao": "Siga a energia no seu canal favorito." }
+    {
+      "id": "mundos",
+      "nome": "Meus Mundos",
+      "descricao": "Portais criados para expandir sua consciência, sua mente e sua prosperidade."
+    },
+    {
+      "id": "redes",
+      "nome": "Redes Kaelenvash",
+      "descricao": "Siga a energia no seu canal favorito."
+    }
   ],
   "itens": [
     {
@@ -54,12 +62,82 @@
       "ativo": true,
       "destaque": false
     },
-    { "id": "youtube", "nome": "YouTube", "descricao": "Vídeos, rituais e revelações.", "url": "https://www.youtube.com/@kaelenvash", "categoria": "redes", "tema": "youtube", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "instagram", "nome": "Instagram", "descricao": "O dia a dia da jornada em imagens.", "url": "https://www.instagram.com/kaelenvash", "categoria": "redes", "tema": "instagram", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "tiktok", "nome": "TikTok", "descricao": "Doses rápidas de luz e sabedoria.", "url": "https://www.tiktok.com/@kaelenvash", "categoria": "redes", "tema": "tiktok", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "facebook", "nome": "Facebook", "descricao": "A comunidade da Teia reunida.", "url": "https://www.facebook.com/kaelenvash", "categoria": "redes", "tema": "facebook", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "threads", "nome": "Threads", "descricao": "Pensamentos que conectam mundos.", "url": "https://www.threads.com/@kaelenvash", "categoria": "redes", "tema": "threads", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "whatsapp", "nome": "WhatsApp", "descricao": "Fale direto comigo.", "url": "whatsapp", "categoria": "redes", "tema": "whatsapp", "mandala": "auto", "ativo": true, "destaque": false },
-    { "id": "tinder", "nome": "Tinder", "descricao": "Conexões com alma.", "url": "https://tinder.com/@kaelenvash", "categoria": "redes", "tema": "tinder", "mandala": "auto", "ativo": true, "destaque": false }
+    {
+      "id": "youtube",
+      "nome": "YouTube",
+      "descricao": "Vídeos, rituais e revelações.",
+      "url": "https://www.youtube.com/@kaelenvash",
+      "categoria": "redes",
+      "tema": "youtube",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "instagram",
+      "nome": "Instagram",
+      "descricao": "O dia a dia da jornada em imagens.",
+      "url": "https://www.instagram.com/kaelenvash",
+      "categoria": "redes",
+      "tema": "instagram",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "tiktok",
+      "nome": "TikTok",
+      "descricao": "Doses rápidas de luz e sabedoria.",
+      "url": "https://www.tiktok.com/@kaelenvash",
+      "categoria": "redes",
+      "tema": "tiktok",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "facebook",
+      "nome": "Facebook",
+      "descricao": "A comunidade da Teia reunida.",
+      "url": "https://www.facebook.com/kaelenvash",
+      "categoria": "redes",
+      "tema": "facebook",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "threads",
+      "nome": "Threads",
+      "descricao": "Pensamentos que conectam mundos.",
+      "url": "https://www.threads.com/@kaelenvash",
+      "categoria": "redes",
+      "tema": "threads",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "whatsapp",
+      "nome": "WhatsApp",
+      "descricao": "Fale direto comigo.",
+      "url": "whatsapp",
+      "categoria": "redes",
+      "tema": "whatsapp",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "tinder",
+      "nome": "Tinder",
+      "descricao": "Conexões com alma.",
+      "url": "https://tinder.com/@kaelenvash",
+      "categoria": "redes",
+      "tema": "tinder",
+      "mandala": "auto",
+      "ativo": true,
+      "destaque": false
+    }
   ]
 }
