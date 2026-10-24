@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pagamento · Estúdio Kaelenvash</title>
+<meta name="description" content="Pagamento seguro do Estúdio Kaelenvash por Pix.">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#13042A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="pagar.css">
+</head>
+<body>
+<main class="caixa">
+  <header class="topo">
+    <img src="../assets/mandala.svg" alt="" width="44" height="44">
+    <div><p class="marca">Estúdio Kaelenvash</p><p class="sub">Pagamento direto e seguro</p></div>
+  </header>
+
+  <section class="resumo" aria-labelledby="t-resumo">
+    <h1 id="t-resumo" class="sr">Resumo do pagamento</h1>
+    <p class="rot" id="r-cliente" hidden></p>
+    <p class="serv" id="r-desc">Pagamento ao Estúdio Kaelenvash</p>
+    <div class="valor-linha">
+      <p class="valor" id="r-valor" hidden></p>
+      <label class="valor-livre" id="r-livre" hidden>Valor a pagar (R$)
+        <input id="valor-input" type="text" inputmode="decimal" placeholder="0,00" autocomplete="off">
+      </label>
+    </div>
+    <p class="ref" id="r-ref" hidden></p>
+  </section>
+
+  <section class="pix" aria-labelledby="t-pix">
+    <div class="pix-cab"><h2 id="t-pix">Pague com Pix</h2><span class="selo">Recomendado · na hora</span></div>
+    <div class="chaves" role="tablist" aria-label="Escolha a conta" id="chaves"></div>
+    <div class="qr-area">
+      <div class="qr" id="qr" aria-live="polite"></div>
+      <ol class="passos">
+        <li>Abra o app do seu banco e escolha <b>Pix</b>.</li>
+        <li>Leia o QR Code ou use <b>Pix Copia e Cola</b>.</li>
+        <li>Confira o valor e o nome do recebedor e confirme.</li>
+      </ol>
+    </div>
+    <button class="btn principal" id="copiar-codigo" type="button">Copiar código Pix</button>
+    <div class="chave-box">
+      <span class="rot">Ou pague pela chave</span>
+      <span class="chave" id="chave-texto"></span>
+      <button class="btn leve" id="copiar-chave" type="button">Copiar chave</button>
+    </div>
+    <textarea id="codigo" class="codigo" readonly rows="4" aria-label="Código Pix Copia e Cola"></textarea>
+  </section>
+
+  <section class="outros" id="outros" hidden aria-labelledby="t-outros">
+    <h2 id="t-outros">Outras formas de pagamento</h2>
+    <div id="outros-lista"></div>
+  </section>
+
+  <section class="depois" aria-labelledby="t-depois">
+    <h2 id="t-depois">Já pagou?</h2>
+    <p>Envie o comprovante para confirmarmos e liberarmos o seu projeto.</p>
+    <a class="btn whats" id="comprovante" href="https://wa.me/5598985802413" target="_blank" rel="noopener">Enviar comprovante pelo WhatsApp</a>
+    <p class="nota">Ou por e-mail: <span class="sel">kaelenvash999@gmail.com</span></p>
+  </section>
+
+  <footer class="rodape">
+    <p>Pagamento feito direto na conta do Estúdio, sem intermediários. O app do seu banco mostra o nome do titular antes de você confirmar.</p>
+    <p><a href="../">kaelenvash.com</a></p>
+  </footer>
+</main>
+<div class="aviso" id="aviso" role="status" hidden></div>
+<script src="qr.js"></script>
+<script src="pagar.js"></script>
+</body>
+</html>
