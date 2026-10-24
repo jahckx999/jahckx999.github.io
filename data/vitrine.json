@@ -63,34 +63,12 @@
       "destaque": false
     },
     {
-      "id": "youtube",
-      "nome": "YouTube",
-      "descricao": "Vídeos, rituais e revelações.",
-      "url": "https://www.youtube.com/@kaelenvash",
-      "categoria": "redes",
-      "tema": "youtube",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
       "id": "instagram",
       "nome": "Instagram",
       "descricao": "O dia a dia da jornada em imagens.",
       "url": "https://www.instagram.com/kaelenvash",
       "categoria": "redes",
       "tema": "instagram",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
-      "id": "tiktok",
-      "nome": "TikTok",
-      "descricao": "Doses rápidas de luz e sabedoria.",
-      "url": "https://www.tiktok.com/@kaelenvash",
-      "categoria": "redes",
-      "tema": "tiktok",
       "mandala": "auto",
       "ativo": true,
       "destaque": false
@@ -107,34 +85,12 @@
       "destaque": false
     },
     {
-      "id": "threads",
-      "nome": "Threads",
-      "descricao": "Pensamentos que conectam mundos.",
-      "url": "https://www.threads.com/@kaelenvash",
-      "categoria": "redes",
-      "tema": "threads",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
       "id": "whatsapp",
       "nome": "WhatsApp",
       "descricao": "Fale direto comigo.",
       "url": "whatsapp",
       "categoria": "redes",
       "tema": "whatsapp",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
-      "id": "tinder",
-      "nome": "Tinder",
-      "descricao": "Conexões com alma.",
-      "url": "https://tinder.com/@kaelenvash",
-      "categoria": "redes",
-      "tema": "tinder",
       "mandala": "auto",
       "ativo": true,
       "destaque": false
