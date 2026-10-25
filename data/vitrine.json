@@ -52,17 +52,6 @@
       "destaque": false
     },
     {
-      "id": "garimpo-diario",
-      "nome": "Garimpo Diário",
-      "descricao": "As melhores ofertas garimpadas a dedo, todos os dias, para você economizar de verdade.",
-      "url": "/ofertas/",
-      "categoria": "mundos",
-      "tema": "garimpo-diario",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
       "id": "instagram",
       "nome": "Instagram",
       "descricao": "O dia a dia da jornada em imagens.",
