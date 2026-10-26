@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://kaelenvash.com/</loc></url></urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://kaelenvash.com/sitemap-vitrine.xml</loc></sitemap>
+<sitemap><loc>https://kaelenvash.com/teia-universal/sitemap.xml</loc></sitemap>
+<sitemap><loc>https://kaelenvash.com/teia-das-linguas/sitemap.xml</loc></sitemap>
+</sitemapindex>

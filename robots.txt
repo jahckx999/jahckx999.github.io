@@ -1,3 +1,8 @@
 User-agent: *
+Allow: /
 Disallow: /painel/
+Disallow: /pagar/
+Disallow: /teia-universal/painel/
+Disallow: /teia-das-linguas/painel/
+Disallow: /teia-das-linguas/tools/
 Sitemap: https://kaelenvash.com/sitemap.xml
