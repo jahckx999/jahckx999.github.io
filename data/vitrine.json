@@ -41,17 +41,6 @@
       "destaque": false
     },
     {
-      "id": "radar-futuro",
-      "nome": "Radar Futuro",
-      "descricao": "Tecnologia, IA, finanças e ciência: as notícias que moldam o amanhã, todos os dias.",
-      "url": "https://radarfuturo.blogspot.com",
-      "categoria": "mundos",
-      "tema": "radar-futuro",
-      "mandala": "auto",
-      "ativo": true,
-      "destaque": false
-    },
-    {
       "id": "instagram",
       "nome": "Instagram",
       "descricao": "O dia a dia da jornada em imagens.",
