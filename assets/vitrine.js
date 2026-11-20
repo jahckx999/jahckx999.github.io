@@ -149,6 +149,58 @@
     tinder: { rotulo: 'Conexões', c1: '#3F0A1E', c2: '#E11D48', acento: '#FDBA74', motivo: 'chamas', icone: 'chama', forca: 'sexualidade', cta: 'Dar match', hosts: ['tinder.com'], grad: 'linear-gradient(135deg,#4C0519 0%,#BE123C 55%,#EA580C 100%)' }
   };
 
+  /* ---------- idiomas: o <html lang> da página escolhe a versão (pt = padrão) ---------- */
+  const LANG = String((global.document && document.documentElement.lang) || 'pt').slice(0, 2).toLowerCase();
+  const TRAD = {
+    en: {
+      forcas: {
+        riqueza: ['Wealth', 'Star of Lakshmi', 'Material abundance that flows and multiplies.'],
+        sabedoria: ['Wisdom', 'Sri Yantra', 'The mind aligned with the intelligence of the Universe.'],
+        poder: ['Power', 'Merkaba', 'Inner strength, presence and direction.'],
+        sexualidade: ['Sexuality', 'Sacred Hexagram', 'Union of polarities, desire and creative energy.'],
+        protecao: ['Protection', 'Metatron’s Cube', 'A spiritual shield that guards your path.'],
+        cura: ['Healing', 'Flower of Life', 'Restoration of body, mind and soul.'],
+        prosperidade: ['Prosperity', 'Golden Spiral', 'Continuous growth in divine proportion.'],
+        amor: ['Love', 'Vesica Piscis', 'The meeting of two worlds that creates life.'],
+        alegria: ['Joy', 'Solar Crown', 'Light that radiates and spreads.']
+      },
+      temas: {
+        'teia-universal': ['Spiritual Portal', 'Enter the portal'], 'teia-das-linguas': ['Language School', 'Start learning'],
+        'radar-futuro': ['Daily News', 'See the radar'], 'garimpo-diario': ['Deals of the Day', 'See the deals'],
+        youtube: ['Video channel', 'Watch'], instagram: ['Photos & Reels', 'Follow'], tiktok: ['Short videos', 'Follow'],
+        facebook: ['Community', 'Like the page'], threads: ['Conversations', 'Follow'], whatsapp: ['Direct chat', 'Message on WhatsApp'],
+        tinder: ['Connections', 'Match']
+      },
+      txt: { embreve: 'Coming soon', rede: 'Social network', mundo: 'New world', acessar: 'Visit' }
+    },
+    es: {
+      forcas: {
+        riqueza: ['Riqueza', 'Estrella de Lakshmi', 'Abundancia material que fluye y se multiplica.'],
+        sabedoria: ['Sabiduría', 'Sri Yantra', 'La mente alineada con la inteligencia del Universo.'],
+        poder: ['Poder', 'Merkaba', 'Fuerza interior, presencia y dirección.'],
+        sexualidade: ['Sexualidad', 'Hexagrama Sagrado', 'Unión de las polaridades, deseo y energía creadora.'],
+        protecao: ['Protección', 'Cubo de Metatrón', 'Escudo espiritual que protege tu camino.'],
+        cura: ['Sanación', 'Flor de la Vida', 'Restauración del cuerpo, la mente y el alma.'],
+        prosperidade: ['Prosperidad', 'Espiral Áurea', 'Crecimiento continuo en la proporción divina.'],
+        amor: ['Amor', 'Vesica Piscis', 'El encuentro de dos mundos que genera vida.'],
+        alegria: ['Alegría', 'Corona Solar', 'Luz que irradia y contagia.']
+      },
+      temas: {
+        'teia-universal': ['Portal Espiritual', 'Entrar al portal'], 'teia-das-linguas': ['Escuela de Idiomas', 'Empezar a aprender'],
+        'radar-futuro': ['Noticias Diarias', 'Ver el radar'], 'garimpo-diario': ['Ofertas del Día', 'Ver ofertas'],
+        youtube: ['Canal de videos', 'Ver'], instagram: ['Fotos y Reels', 'Seguir'], tiktok: ['Videos cortos', 'Seguir'],
+        facebook: ['Comunidad', 'Me gusta'], threads: ['Conversaciones', 'Seguir'], whatsapp: ['Charla directa', 'Escribir por WhatsApp'],
+        tinder: ['Conexiones', 'Hacer match']
+      },
+      txt: { embreve: 'Próximamente', rede: 'Red social', mundo: 'Nuevo mundo', acessar: 'Acceder' }
+    }
+  };
+  const TXT = Object.assign({ embreve: 'Em breve', rede: 'Rede social', mundo: 'Novo mundo', acessar: 'Acessar' }, (TRAD[LANG] || {}).txt);
+  if (TRAD[LANG]) {
+    Object.entries(TRAD[LANG].forcas).forEach(([k, v]) => { if (FORCAS[k]) Object.assign(FORCAS[k], { nome: v[0], simbolo: v[1], sentido: v[2] }); });
+    Object.entries(TRAD[LANG].temas).forEach(([k, v]) => { if (TEMAS[k]) Object.assign(TEMAS[k], { rotulo: v[0], cta: v[1] }); });
+  }
+
   function detectarTema(item) {
     if (item.tema && item.tema !== 'auto' && TEMAS[item.tema]) return item.tema;
     const u = String(item.url || '').toLowerCase();
@@ -159,7 +211,7 @@
 
   function temaGerado(item) {
     const h = hash(item.nome || item.id) % 360;
-    return { rotulo: item.categoria === 'redes' ? 'Rede social' : 'Novo mundo', c1: `hsl(${h} 70% 9%)`, c2: `hsl(${h} 65% 34%)`, acento: `hsl(${h} 90% 80%)`, motivo: 'constelacao', icone: item.categoria === 'redes' ? 'link' : 'estrela', forca: null, cta: 'Acessar' };
+    return { rotulo: item.categoria === 'redes' ? TXT.rede : TXT.mundo, c1: `hsl(${h} 70% 9%)`, c2: `hsl(${h} 65% 34%)`, acento: `hsl(${h} 90% 80%)`, motivo: 'constelacao', icone: item.categoria === 'redes' ? 'link' : 'estrela', forca: null, cta: TXT.acessar };
   }
 
   function resolver(dados) {
@@ -272,10 +324,11 @@
     <span class="b-topo"><span class="b-icone">${icone(tema.icone)}</span><span class="b-rotulo">${esc(tema.rotulo)}</span></span>
     <span class="b-nome">${esc(it.nome)}</span>
     ${it.descricao ? `<span class="b-desc">${esc(it.descricao)}</span>` : ''}
-    <span class="b-rodape"><span class="b-forca" title="${esc(F.simbolo)}">✦ ${esc(F.nome)}</span><span class="b-cta">${href ? esc(it.cta || tema.cta) + ' <b>→</b>' : 'Em breve'}</span></span>
+    ${it.aviso ? `<span class="b-aviso">${esc(it.aviso)}</span>` : ''}
+    <span class="b-rodape"><span class="b-forca" title="${esc(F.simbolo)}">✦ ${esc(F.nome)}</span><span class="b-cta">${href ? esc(it.cta || tema.cta) + ' <b>→</b>' : esc(TXT.embreve)}</span></span>
   </span>
 </${tag}>`;
   }
 
-  global.KV = { FORCAS, ORDEM_FORCAS, TEMAS, mandalaSVG, banner, resolver, linkDe, esc, icone, detectarTema };
+  global.KV = { LANG, TXT, FORCAS, ORDEM_FORCAS, TEMAS, mandalaSVG, banner, resolver, linkDe, esc, icone, detectarTema };
 })(window);

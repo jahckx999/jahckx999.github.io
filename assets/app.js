@@ -1,7 +1,23 @@
 /* KAELENVASH — página inicial: lê data/vitrine.json e monta tudo sozinha */
 (function () {
   'use strict';
-  const { FORCAS, ORDEM_FORCAS, mandalaSVG, banner, resolver, esc } = window.KV;
+  const { LANG, FORCAS, ORDEM_FORCAS, mandalaSVG, banner, resolver, esc } = window.KV;
+  const MSG = {
+    pt: { todos: 'Todos', vazio: 'Novos portais surgirão em breve.', erro: 'Não foi possível abrir os portais agora. Atualize a página em instantes.' },
+    en: { todos: 'All', vazio: 'New portals will appear soon.', erro: 'The portals could not be opened right now. Please refresh the page in a moment.' },
+    es: { todos: 'Todos', vazio: 'Pronto surgirán nuevos portales.', erro: 'No fue posible abrir los portales ahora. Actualiza la página en unos instantes.' }
+  }[LANG] || null;
+  const M = MSG || { todos: 'Todos', vazio: 'Novos portais surgirão em breve.', erro: 'Não foi possível abrir os portais agora. Atualize a página em instantes.' };
+
+  /* versão traduzida: data/vitrine-<idioma>.json traduz textos por id (o que não estiver lá fica em português) */
+  function traduz(dados, tr) {
+    if (!tr) return dados;
+    Object.assign(dados.config = dados.config || {}, tr.config || {});
+    const cats = tr.categorias || {}, its = tr.itens || {};
+    (dados.categorias || []).forEach((c) => Object.assign(c, cats[c.id] || {}));
+    (dados.itens || []).forEach((i) => Object.assign(i, its[i.id] || {}));
+    return dados;
+  }
   const $ = (s) => document.querySelector(s);
   $('#ano').textContent = new Date().getFullYear();
 
@@ -60,12 +76,12 @@
         <div class="ornamento" aria-hidden="true">${mandalaSVG(ORDEM_FORCAS[(c.id.length * 7) % 9], { traco: 6 })}</div>
         ${c.descricao ? `<p>${esc(c.descricao)}</p>` : ''}</div>
         <div class="grade ${classe}">${itens.map((o, i) => banner(o, cfg, i)).join('')}</div></section>`;
-    }).join('') || '<p class="vazio">Novos portais surgirão em breve.</p>';
+    }).join('') || `<p class="vazio">${esc(M.vazio)}</p>`;
 
     // filtros automáticos
     const f = $('#filtros');
     if (usadas.length > 1) {
-      f.innerHTML = `<button type="button" aria-pressed="true" data-f="*">Todos</button>` + usadas.map((c) => `<button type="button" aria-pressed="false" data-f="${esc(c.id)}">${esc(c.nome)}</button>`).join('');
+      f.innerHTML = `<button type="button" aria-pressed="true" data-f="*">${esc(M.todos)}</button>` + usadas.map((c) => `<button type="button" aria-pressed="false" data-f="${esc(c.id)}">${esc(c.nome)}</button>`).join('');
       f.addEventListener('click', (e) => {
         const b = e.target.closest('button'); if (!b) return;
         f.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
@@ -91,8 +107,8 @@
   }
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(encaixa, 120); });
 
-  fetch('data/vitrine.json?v=' + Date.now(), { cache: 'no-store' })
-    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(monta)
-    .catch(() => { $('#secoes').innerHTML = '<p class="vazio">Não foi possível abrir os portais agora. Atualize a página em instantes.</p>'; });
+  const pega = (u) => fetch(u + '?v=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  Promise.all([pega('/data/vitrine.json'), LANG !== 'pt' ? pega('/data/vitrine-' + LANG + '.json').catch(() => null) : null])
+    .then(([d, tr]) => monta(traduz(d, tr)))
+    .catch(() => { $('#secoes').innerHTML = `<p class="vazio">${esc(M.erro)}</p>`; });
 })();

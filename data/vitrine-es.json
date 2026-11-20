@@ -1,0 +1,17 @@
+{
+  "config": {
+    "frase": "Un universo de mundos conectados",
+    "mensagemWhatsapp": "¡Hola! Llegué por kaelenvash.com ✨"
+  },
+  "categorias": {
+    "mundos": { "nome": "Mis Mundos", "descricao": "Portales creados para expandir tu conciencia, tu mente y tu prosperidad." },
+    "redes": { "nome": "Redes Kaelenvash", "descricao": "Sigue la energía en tu canal favorito." }
+  },
+  "itens": {
+    "teia-universal": { "descricao": "Espiritualidad, la Fuente Creadora y la jerarquía del Universo desde la visión de las grandes tradiciones.", "aviso": "En portugués · pronto en tu idioma" },
+    "teia-das-linguas": { "descricao": "Aprende idiomas del A1 al C2 con pronunciación, audio y métodos comprobados.", "aviso": "En portugués · pronto en tu idioma" },
+    "instagram": { "descricao": "El día a día del camino en imágenes." },
+    "facebook": { "descricao": "La comunidad de la Teia reunida." },
+    "whatsapp": { "descricao": "Habla directamente conmigo." }
+  }
+}

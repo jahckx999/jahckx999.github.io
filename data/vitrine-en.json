@@ -1,0 +1,17 @@
+{
+  "config": {
+    "frase": "A universe of connected worlds",
+    "mensagemWhatsapp": "Hi! I found you through kaelenvash.com ✨"
+  },
+  "categorias": {
+    "mundos": { "nome": "My Worlds", "descricao": "Portals created to expand your consciousness, your mind and your prosperity." },
+    "redes": { "nome": "Kaelenvash Networks", "descricao": "Follow the energy on your favorite channel." }
+  },
+  "itens": {
+    "teia-universal": { "descricao": "Spirituality, the Creative Source and the hierarchy of the Universe through the eyes of the great traditions.", "aviso": "In Portuguese · coming soon in your language" },
+    "teia-das-linguas": { "descricao": "Learn languages from A1 to C2 with pronunciation, audio and proven methods.", "aviso": "In Portuguese · coming soon in your language" },
+    "instagram": { "descricao": "The journey, day by day, in pictures." },
+    "facebook": { "descricao": "The Teia community, all together." },
+    "whatsapp": { "descricao": "Talk to me directly." }
+  }
+}
