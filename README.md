@@ -12,3 +12,7 @@ Vitrine que se monta sozinha a partir de `data/vitrine.json`.
 - `assets/idioma.js` — menu 🌐 e troca automática pelo idioma do navegador (a escolha fica lembrada; robôs do Google nunca são redirecionados).
 - Banners traduzidos: `data/vitrine-en.json` e `data/vitrine-es.json` (por id; o que não estiver lá aparece em português).
 - Depois de mudar textos institucionais: `python3 tools/idiomas.py` (regera EN/ES, hreflang, CSP e o sitemap).
+
+## Guias (conteúdo original)
+- Textos em `tools/guias_conteudo.py`; gerar páginas com `python3 tools/guias.py`.
+- Cria `/guias/` e `/guias/<slug>/`, atualiza o bloco fixo de texto da página inicial (`<!--guias-home-->`) e o `sitemap-guias.xml`.

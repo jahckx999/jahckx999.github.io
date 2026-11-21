@@ -1,0 +1,21 @@
+/* KAELENVASH — Guias (artigos) e bloco de texto da página inicial */
+.kv-guias{display:grid;gap:12px;margin-top:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.kv-guias a{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--linha);border-radius:16px;text-decoration:none;background:rgba(34,9,63,.55);transition:border-color .2s,transform .2s}
+.kv-guias a:hover{border-color:var(--ouro-2);transform:translateY(-2px)}
+.kv-guias small{font:700 .66rem var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--ouro-2)}
+.kv-guias b{font-family:var(--serif);font-weight:600;letter-spacing:.04em;line-height:1.35;color:var(--ouro-1)}
+.kv-guias span{color:var(--texto-2);font-size:.9rem;line-height:1.55}
+.kv-sobre-home{max-width:1080px;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}
+.kv-texto{max-width:760px;margin:0 auto;line-height:1.75}
+.kv-texto p{color:var(--texto)}
+.kv-texto p+p{margin-top:12px}
+.kv-texto a,.guia article a,.doc .nota a{color:var(--ouro-1)}
+.guia .trilha{font:600 .72rem var(--ui);letter-spacing:.08em;color:var(--texto-2);margin-bottom:18px;text-align:center}
+.guia .trilha a{color:var(--texto-2);text-decoration:none}
+.guia .trilha a:hover{color:var(--ouro-1)}
+.guia article .lead{font-size:1.1rem;color:var(--texto)}
+.guia article h3{font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.05em;color:var(--ouro-2);margin:22px 0 6px}
+.guia article ol{margin:10px 0 0 1.3em}
+.guia article ol li+li{margin-top:8px}
+.guia article li+li{margin-top:6px}
+.doc .nota{margin-top:34px;padding:14px 16px;border:1px solid var(--linha);border-radius:14px;font-size:.85rem;color:var(--texto-2);background:rgba(0,0,0,.2)}
