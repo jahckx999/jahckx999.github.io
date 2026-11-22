@@ -3,6 +3,7 @@ Allow: /
 Disallow: /painel/
 Disallow: /pagar/
 Disallow: /recibo/
+Disallow: /orcamento/
 Disallow: /teia-universal/painel/
 Disallow: /teia-das-linguas/painel/
 Disallow: /teia-das-linguas/tools/

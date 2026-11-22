@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Orçamento · Estúdio Kaelenvash</title>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#13042A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="../pagar/pagar.css">
+<link rel="stylesheet" href="../recibo/recibo.css">
+</head>
+<body>
+<main class="caixa">
+  <header class="topo nao-imprime">
+    <img src="../assets/mandala.svg" alt="" width="44" height="44">
+    <div><p class="marca">Estúdio Kaelenvash</p><p class="sub">Gerador de orçamentos · uso interno</p></div>
+  </header>
+
+  <section class="nao-imprime" aria-labelledby="t-dados">
+    <h2 id="t-dados">Dados do orçamento</h2>
+    <p class="dica">Nada é salvo nem enviado para servidor: tudo fica só neste aparelho. Use o preço oficial do seu Catálogo do WhatsApp.</p>
+    <div class="campos">
+      <label>Cliente<input id="f-nome" maxlength="60" autocomplete="off" placeholder="Nome do cliente"></label>
+      <label>Serviço<input id="f-serv" maxlength="70" autocomplete="off" placeholder="Ex.: Site institucional"></label>
+      <label>O que está incluído (uma linha por item)<textarea id="f-itens" rows="5" maxlength="900" placeholder="Design exclusivo&#10;Até 5 páginas&#10;Versão em PT e EN&#10;Domínio e e-mail configurados"></textarea></label>
+      <div class="lado">
+        <label>Valor total (R$)<input id="f-valor" inputmode="decimal" autocomplete="off" placeholder="0,00"></label>
+        <label>Prazo de entrega<input id="f-prazo" maxlength="30" autocomplete="off" placeholder="Ex.: 15 dias úteis"></label>
+      </div>
+      <div class="lado">
+        <label>Pagamento<select id="f-cond">
+          <option value="100">À vista no Pix</option>
+          <option value="50">50% para iniciar + 50% na entrega</option>
+        </select></label>
+        <label>Válido por (dias)<input id="f-valid" inputmode="numeric" maxlength="3" value="7"></label>
+      </div>
+      <label>E-mail do cliente<input id="f-email" type="email" maxlength="80" autocomplete="off" placeholder="cliente@email.com"></label>
+      <label>WhatsApp do cliente<input id="f-whats" inputmode="tel" maxlength="20" autocomplete="off" placeholder="5591999999999"></label>
+    </div>
+  </section>
+
+  <section class="recibo" aria-labelledby="t-orc">
+    <div class="rec-topo">
+      <img src="../assets/mandala.svg" alt="" width="52" height="52">
+      <div>
+        <p class="marca">Estúdio Kaelenvash</p>
+        <p class="sub">kaelenvash.com · estudio@kaelenvash.com</p>
+      </div>
+    </div>
+    <h1 id="t-orc">Orçamento</h1>
+    <p class="rec-num" id="p-num"></p>
+    <p class="rec-texto" id="p-para"></p>
+    <p class="serv" id="p-serv"></p>
+    <ul class="rec-itens" id="p-itens"></ul>
+    <p class="valor" id="p-valor">R$ 0,00</p>
+    <dl class="rec-lista">
+      <dt>Pagamento</dt><dd id="p-cond"></dd>
+      <dt>Prazo</dt><dd id="p-prazo"></dd>
+      <dt>Validade</dt><dd id="p-valid"></dd>
+      <dt>Pagar</dt><dd><a id="p-link" href="#" target="_blank" rel="noopener"></a></dd>
+    </dl>
+    <p class="rec-assina">Estúdio Kaelenvash<br><span>Jackson Davi Caldas Teixeira · Brasil</span></p>
+  </section>
+
+  <section class="nao-imprime acoes" aria-label="Enviar orçamento">
+    <a class="btn principal" id="b-email" href="#">Enviar por e-mail</a>
+    <a class="btn whats" id="b-whats" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+    <div class="lado">
+      <button class="btn leve" id="b-copiar" type="button">Copiar texto</button>
+      <button class="btn leve" id="b-pdf" type="button">Salvar PDF</button>
+    </div>
+    <a class="btn leve" id="b-recibo" href="../recibo/">Depois do Pix: gerar recibo →</a>
+    <p class="dica">O e-mail abre no seu Gmail já como <b>estudio@kaelenvash.com</b>. Confira o remetente antes de enviar.</p>
+  </section>
+</main>
+<div class="aviso" id="aviso" role="status" hidden></div>
+<script src="orcamento.js"></script>
+</body>
+</html>
