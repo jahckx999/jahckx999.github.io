@@ -112,7 +112,7 @@ T = {
 <p>To keep everything free, the site displays or may display Google AdSense ads, always labeled and kept separate from the content. Ads do not influence what we publish.</p>
 
 <h2>Get in touch</h2>
-<p>Suggestions, corrections, partnerships or questions are very welcome. Visit the <a href="/en/contact/">Contact</a> page or write to <a href="mailto:kaelenvash999@gmail.com?subject=Contact%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</p>''',
+<p>Suggestions, corrections, partnerships or questions are very welcome. Visit the <a href="/en/contact/">Contact</a> page or write to <a href="mailto:estudio@kaelenvash.com?subject=Contact%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</p>''',
         },
         'contato': {
             'title': 'Contact · KAELENVASH',
@@ -147,7 +147,7 @@ T = {
 <p><em>This is a translation of the original policy in Portuguese. In case of any discrepancy, the <a href="/privacidade/">Portuguese version</a> prevails.</em></p>
 
 <h2>1. Who is responsible</h2>
-<p>kaelenvash.com is maintained by <strong>Jackson Davi Caldas Teixeira</strong> (KAELENVASH brand), in Brazil, who acts as the controller of the personal data processed on this site. For any privacy matter, write to <a href="mailto:kaelenvash999@gmail.com?subject=Privacy%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</p>
+<p>kaelenvash.com is maintained by <strong>Jackson Davi Caldas Teixeira</strong> (KAELENVASH brand), in Brazil, who acts as the controller of the personal data processed on this site. For any privacy matter, write to <a href="mailto:estudio@kaelenvash.com?subject=Privacy%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</p>
 
 <h2>2. What this policy covers</h2>
 <p>It applies to the entire kaelenvash.com domain, including the showcase and the portals published on it, such as <a href="/teia-universal/">Teia Universal</a> and <a href="/teia-das-linguas/">Teia das Línguas</a>. Features specific to each portal (for example, the Teia das Línguas study account) may have complementary rules described in <a href="/teia-das-linguas/privacidade.html">that portal’s own policy</a>. External sites we link to, such as social networks, follow their own providers’ policies.</p>
@@ -191,7 +191,7 @@ T = {
 <p>Messages and receipts are kept only for as long as needed to handle your request and comply with legal obligations. Data stored in your browser is under your control and can be deleted at any time in its settings.</p>
 
 <h2>9. Your rights</h2>
-<p>Under the LGPD (art. 18), you may request at any time: confirmation that we process your data; access; correction; anonymization, blocking or deletion of unnecessary data; portability; information about whom we share it with; and withdrawal of consent. Just write to <a href="mailto:kaelenvash999@gmail.com?subject=Data%20rights%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>. We will reply within a reasonable time, and, if you prefer, you may also contact Brazil’s National Data Protection Authority (ANPD) or the data protection authority of your country.</p>
+<p>Under the LGPD (art. 18), you may request at any time: confirmation that we process your data; access; correction; anonymization, blocking or deletion of unnecessary data; portability; information about whom we share it with; and withdrawal of consent. Just write to <a href="mailto:estudio@kaelenvash.com?subject=Data%20rights%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>. We will reply within a reasonable time, and, if you prefer, you may also contact Brazil’s National Data Protection Authority (ANPD) or the data protection authority of your country.</p>
 
 <h2>10. Security</h2>
 <p>The site uses an encrypted connection (HTTPS) and content security policies that limit what can be loaded on its pages. No system is 100% invulnerable, but we take reasonable measures to protect information.</p>
@@ -202,7 +202,7 @@ T = {
 <h2>12. Changes to this policy</h2>
 <p>This policy may be updated to reflect new features or legal requirements. The date at the top shows the most recent version.</p>
 
-<div class="caixa">Questions? Talk to us through the <a href="/en/contact/">Contact</a> page or by email at <a href="mailto:kaelenvash999@gmail.com?subject=Privacy%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</div>''',
+<div class="caixa">Questions? Talk to us through the <a href="/en/contact/">Contact</a> page or by email at <a href="mailto:estudio@kaelenvash.com?subject=Privacy%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</div>''',
         },
         'canal_insta': 'Instagram', 'canal_face': 'Facebook',
     },
@@ -247,7 +247,7 @@ T = {
 <p>Para mantener todo gratuito, el sitio muestra o podrá mostrar anuncios de Google AdSense, siempre identificados y separados del contenido. Los anuncios no influyen en lo que publicamos.</p>
 
 <h2>Habla con nosotros</h2>
-<p>Sugerencias, correcciones, alianzas o dudas son muy bienvenidas. Visita la página de <a href="/es/contacto/">Contacto</a> o escribe a <a href="mailto:kaelenvash999@gmail.com?subject=Contacto%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</p>''',
+<p>Sugerencias, correcciones, alianzas o dudas son muy bienvenidas. Visita la página de <a href="/es/contacto/">Contacto</a> o escribe a <a href="mailto:estudio@kaelenvash.com?subject=Contacto%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</p>''',
         },
         'contato': {
             'title': 'Contacto · KAELENVASH',
@@ -282,7 +282,7 @@ T = {
 <p><em>Esta es una traducción de la política original en portugués. En caso de divergencia, prevalece la <a href="/privacidade/">versión en portugués</a>.</em></p>
 
 <h2>1. Quién es el responsable</h2>
-<p>kaelenvash.com es mantenido por <strong>Jackson Davi Caldas Teixeira</strong> (marca KAELENVASH), en Brasil, quien actúa como responsable del tratamiento de los datos personales en este sitio. Para cualquier asunto de privacidad, escribe a <a href="mailto:kaelenvash999@gmail.com?subject=Privacidad%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</p>
+<p>kaelenvash.com es mantenido por <strong>Jackson Davi Caldas Teixeira</strong> (marca KAELENVASH), en Brasil, quien actúa como responsable del tratamiento de los datos personales en este sitio. Para cualquier asunto de privacidad, escribe a <a href="mailto:estudio@kaelenvash.com?subject=Privacidad%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</p>
 
 <h2>2. A qué se aplica esta política</h2>
 <p>Se aplica a todo el dominio kaelenvash.com, incluidos la vitrina y los portales publicados en él, como la <a href="/teia-universal/">Teia Universal</a> y la <a href="/teia-das-linguas/">Teia das Línguas</a>. Las funciones específicas de cada portal (por ejemplo, la cuenta de estudios de la Teia das Línguas) pueden tener reglas complementarias descritas en la <a href="/teia-das-linguas/privacidade.html">política propia de ese portal</a>. Los sitios externos que indicamos, como las redes sociales, siguen las políticas de sus propios proveedores.</p>
@@ -326,7 +326,7 @@ T = {
 <p>Los mensajes y comprobantes se guardan solo durante el tiempo necesario para atender tu solicitud y cumplir obligaciones legales. Los datos guardados en tu navegador están bajo tu control y pueden borrarse en cualquier momento desde su configuración.</p>
 
 <h2>9. Tus derechos</h2>
-<p>Según la LGPD (art. 18), puedes solicitar en cualquier momento: confirmación de que tratamos tus datos; acceso; corrección; anonimización, bloqueo o eliminación de datos innecesarios; portabilidad; información sobre con quién los compartimos; y revocación del consentimiento. Basta con escribir a <a href="mailto:kaelenvash999@gmail.com?subject=Derechos%20de%20datos%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>. Responderemos en un plazo razonable y, si lo prefieres, también puedes acudir a la Autoridad Nacional de Protección de Datos de Brasil (ANPD) o a la autoridad de protección de datos de tu país.</p>
+<p>Según la LGPD (art. 18), puedes solicitar en cualquier momento: confirmación de que tratamos tus datos; acceso; corrección; anonimización, bloqueo o eliminación de datos innecesarios; portabilidad; información sobre con quién los compartimos; y revocación del consentimiento. Basta con escribir a <a href="mailto:estudio@kaelenvash.com?subject=Derechos%20de%20datos%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>. Responderemos en un plazo razonable y, si lo prefieres, también puedes acudir a la Autoridad Nacional de Protección de Datos de Brasil (ANPD) o a la autoridad de protección de datos de tu país.</p>
 
 <h2>10. Seguridad</h2>
 <p>El sitio utiliza conexión cifrada (HTTPS) y políticas de seguridad de contenido que limitan lo que se puede cargar en las páginas. Ningún sistema es 100 % invulnerable, pero adoptamos medidas razonables para proteger la información.</p>
@@ -337,7 +337,7 @@ T = {
 <h2>12. Cambios en esta política</h2>
 <p>Esta política puede actualizarse para reflejar nuevas funciones o exigencias legales. La fecha en la parte superior indica la versión más reciente.</p>
 
-<div class="caixa">¿Dudas? Habla con nosotros en la página de <a href="/es/contacto/">Contacto</a> o por correo en <a href="mailto:kaelenvash999@gmail.com?subject=Privacidad%20%E2%80%94%20kaelenvash.com">kaelenvash999@gmail.com</a>.</div>''',
+<div class="caixa">¿Dudas? Habla con nosotros en la página de <a href="/es/contacto/">Contacto</a> o por correo en <a href="mailto:estudio@kaelenvash.com?subject=Privacidad%20%E2%80%94%20kaelenvash.com">estudio@kaelenvash.com</a>.</div>''',
         },
         'canal_insta': 'Instagram', 'canal_face': 'Facebook',
     },
@@ -465,9 +465,9 @@ for lingua, t in T.items():
         p = t[pag]
         corpo = p['corpo']
         if pag == 'contato':
-            canal_email = (f'<a class="canal" href="mailto:kaelenvash999@gmail.com?subject={p["email_assunto"]}">'
+            canal_email = (f'<a class="canal" href="mailto:estudio@kaelenvash.com?subject={p["email_assunto"]}">'
                            + re.search(r'(<svg.*?</svg>)', canais[0], flags=re.S).group(1)
-                           + '<span><b>E-mail</b><small>kaelenvash999@gmail.com</small></span></a>')
+                           + '<span><b>E-mail</b><small>estudio@kaelenvash.com</small></span></a>')
             corpo = corpo.format(canal_email=canal_email, svg_whats=svg_whats, canal_insta=canal_insta, canal_face=canal_face)
         atual = ' aria-current="page"'
         nav = ''.join(f'<a href="{PAGINAS[k][lingua]}"{atual if k == pag else ""}>{n}</a>' for k, n in t['nav'])
