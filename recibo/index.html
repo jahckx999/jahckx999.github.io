@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Recibo · Estúdio Kaelenvash</title>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#13042A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="../pagar/pagar.css">
+<link rel="stylesheet" href="recibo.css">
+</head>
+<body>
+<main class="caixa">
+  <header class="topo nao-imprime">
+    <img src="../assets/mandala.svg" alt="" width="44" height="44">
+    <div><p class="marca">Estúdio Kaelenvash</p><p class="sub">Gerador de recibos · uso interno</p></div>
+  </header>
+
+  <section class="nao-imprime" aria-labelledby="t-dados">
+    <h2 id="t-dados">Dados do pagamento</h2>
+    <p class="dica">Nada é salvo nem enviado para servidor: tudo fica só neste aparelho.</p>
+    <div class="campos">
+      <label>Cliente<input id="f-nome" maxlength="60" autocomplete="off" placeholder="Nome do cliente"></label>
+      <label>Serviço<input id="f-serv" maxlength="80" autocomplete="off" placeholder="Ex.: Site institucional"></label>
+      <div class="lado">
+        <label>Valor (R$)<input id="f-valor" inputmode="decimal" autocomplete="off" placeholder="0,00"></label>
+        <label>Data do Pix<input id="f-data" type="date"></label>
+      </div>
+      <label>Pedido / nº do recibo<input id="f-ref" maxlength="25" autocomplete="off" placeholder="Gerado sozinho se ficar vazio"></label>
+      <label>E-mail do cliente<input id="f-email" type="email" maxlength="80" autocomplete="off" placeholder="cliente@email.com"></label>
+      <label>WhatsApp do cliente<input id="f-whats" inputmode="tel" maxlength="20" autocomplete="off" placeholder="5591999999999"></label>
+    </div>
+  </section>
+
+  <section class="recibo" id="recibo" aria-labelledby="t-recibo">
+    <div class="rec-topo">
+      <img src="../assets/mandala.svg" alt="" width="52" height="52">
+      <div>
+        <p class="marca">Estúdio Kaelenvash</p>
+        <p class="sub">kaelenvash.com · estudio@kaelenvash.com</p>
+      </div>
+    </div>
+    <h1 id="t-recibo">Recibo de pagamento</h1>
+    <p class="rec-num" id="p-num"></p>
+    <p class="valor" id="p-valor">R$ 0,00</p>
+    <p class="rec-texto" id="p-texto"></p>
+    <dl class="rec-lista">
+      <dt>Forma</dt><dd>Pix · Nubank</dd>
+      <dt>Data</dt><dd id="p-data"></dd>
+      <dt>Status</dt><dd class="pago">Pagamento confirmado ✓</dd>
+    </dl>
+    <p class="rec-assina">Estúdio Kaelenvash<br><span>Jackson Davi Caldas Teixeira · Brasil</span></p>
+  </section>
+
+  <section class="nao-imprime acoes" aria-label="Enviar recibo">
+    <a class="btn principal" id="b-email" href="#">Enviar por e-mail</a>
+    <a class="btn whats" id="b-whats" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+    <div class="lado">
+      <button class="btn leve" id="b-copiar" type="button">Copiar texto</button>
+      <button class="btn leve" id="b-pdf" type="button">Salvar PDF</button>
+    </div>
+    <p class="dica">O e-mail abre no seu Gmail já como <b>estudio@kaelenvash.com</b>. Confira o remetente antes de enviar.</p>
+  </section>
+</main>
+<div class="aviso" id="aviso" role="status" hidden></div>
+<script src="recibo.js"></script>
+</body>
+</html>

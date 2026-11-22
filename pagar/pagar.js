@@ -81,6 +81,9 @@
     var msg = 'Olá! Fiz o pagamento por Pix ao Estúdio Kaelenvash' + (cliente ? ' (' + cliente + ')' : '') +
       (v ? ', valor ' + brl(v) : '') + (ref ? ', pedido ' + ref : '') + '. Segue o comprovante.';
     $('comprovante').href = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg);
+    $('comprovante-email').href = 'mailto:estudio@kaelenvash.com?subject=' +
+      encodeURIComponent('Comprovante Pix' + (ref ? ' · pedido ' + ref : '') + ' · Estúdio Kaelenvash') +
+      '&body=' + encodeURIComponent(msg);
   }
 
   /* resumo */

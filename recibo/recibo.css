@@ -1,0 +1,29 @@
+/* Gerador de recibos · Estúdio Kaelenvash (usa a base de ../pagar/pagar.css) */
+.dica{font-size:13px;color:var(--texto-2);margin-top:4px}
+.campos{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.campos label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--texto-2);flex:1}
+.campos input{font:600 16px var(--ui);color:var(--texto);background:var(--roxo-1);border:1px solid var(--linha);border-radius:12px;padding:10px 12px;width:100%;color-scheme:dark}
+.lado{display:flex;gap:10px}
+.lado .btn{flex:1}
+.acoes{display:flex;flex-direction:column;gap:10px}
+
+.recibo{display:flex;flex-direction:column;gap:8px;border-color:rgba(228,190,85,.55);box-shadow:0 10px 40px rgba(123,63,191,.25)}
+.rec-topo{display:flex;align-items:center;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--linha)}
+.recibo h1{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.06em;margin-top:6px}
+.rec-num{font-size:13px;color:var(--texto-2);font-variant-numeric:tabular-nums}
+.rec-texto{font-size:15px}
+.rec-lista{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px;margin-top:4px}
+.rec-lista dt{color:var(--texto-2)}
+.rec-lista .pago{color:var(--verde);font-weight:800}
+.rec-assina{margin-top:12px;padding-top:10px;border-top:1px solid var(--linha);font-family:var(--serif);color:var(--ouro-2);font-weight:700}
+.rec-assina span{font-family:var(--ui);font-weight:500;font-size:12px;color:var(--texto-2)}
+
+@media print{
+  html,body{background:#fff!important;color:#13042A!important;padding:0}
+  .nao-imprime,.aviso{display:none!important}
+  .caixa{max-width:none}
+  .recibo{background:#fff;border:2px solid #A8781B;box-shadow:none;color:#13042A}
+  .recibo .valor,.recibo .marca,.rec-assina{color:#A8781B}
+  .rec-num,.rec-lista dt,.recibo .sub,.rec-assina span{color:#4a3a66}
+  .rec-lista .pago{color:#0a7a35}
+}
