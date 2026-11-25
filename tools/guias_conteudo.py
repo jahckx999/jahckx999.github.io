@@ -437,4 +437,93 @@ GUIAS = [
 <p><a href="/guias/como-aprender-um-idioma-sozinho/">Como aprender um idioma sozinho: 7 hábitos com base científica</a></p>
 '''
 },
+{
+'slug': 'solidos-platonicos',
+'titulo': 'Sólidos platônicos: o que são, os 5 sólidos e seus significados',
+'descricao': 'Tetraedro, cubo, octaedro, dodecaedro e icosaedro: por que existem só cinco, o que Platão e Kepler disseram e como montar os seus em papel.',
+'tema': 'Espiritualidade',
+'leitura': 9,
+'publicado': '2026-11-25',
+'corpo': '''
+<p class="lead">Os <strong>sólidos platônicos</strong> são cinco formas geométricas perfeitas que fascinam matemáticos, filósofos e estudiosos da espiritualidade há mais de dois mil anos. Neste guia você vai entender o que eles têm de especial, por que existem apenas cinco, o que cada tradição viu neles e como construir os seus com papel e cola.</p>
+
+<h2>O que é um sólido platônico</h2>
+<p>Um sólido platônico é um <strong>poliedro regular convexo</strong>. Em palavras simples, é uma figura de três dimensões que obedece a três regras ao mesmo tempo:</p>
+<ul>
+<li>todas as faces são o <strong>mesmo polígono regular</strong> (triângulos iguais, quadrados iguais ou pentágonos iguais);</li>
+<li>em cada vértice (cada “ponta”) se encontra o <strong>mesmo número de faces</strong>;</li>
+<li>a figura não tem partes “afundadas”: é <strong>convexa</strong>.</li>
+</ul>
+<p>Pense num dado comum de seis lados: ele é um cubo, o sólido platônico mais conhecido. Os outros quatro também aparecem em dados de jogos de tabuleiro e RPG, com 4, 8, 12 e 20 lados.</p>
+
+<h2>Os cinco sólidos, um a um</h2>
+<h3>1. Tetraedro</h3>
+<p><strong>4 faces</strong> triangulares, 4 vértices e 6 arestas. É a pirâmide de base triangular, o mais simples de todos os poliedros.</p>
+<h3>2. Hexaedro (cubo)</h3>
+<p><strong>6 faces</strong> quadradas, 8 vértices e 12 arestas. Transmite estabilidade: apoia-se firme em qualquer face.</p>
+<h3>3. Octaedro</h3>
+<p><strong>8 faces</strong> triangulares, 6 vértices e 12 arestas. Parece duas pirâmides de base quadrada coladas pela base.</p>
+<h3>4. Dodecaedro</h3>
+<p><strong>12 faces</strong> pentagonais, 20 vértices e 30 arestas. É o único com faces de cinco lados, e o pentágono está ligado à <em>proporção áurea</em>, o que sempre deu a ele um ar de mistério.</p>
+<h3>5. Icosaedro</h3>
+<p><strong>20 faces</strong> triangulares, 12 vértices e 30 arestas. É o mais “arredondado” dos cinco e, entre eles, o que mais se aproxima de uma esfera.</p>
+
+<h2>Por que existem só cinco? (a parte matemática)</h2>
+<p>Esse é um <strong>fato demonstrado</strong>, não uma crença. A explicação cabe num parágrafo: para formar uma ponta de sólido, é preciso juntar pelo menos três faces num vértice, e a soma dos ângulos dessas faces tem de ser <strong>menor que 360°</strong>. Se der exatamente 360°, as faces ficam planas, como um piso de azulejos; se passar disso, elas nem se encaixam.</p>
+<ul>
+<li><strong>Triângulos</strong> (ângulo de 60°): 3 por vértice somam 180° (tetraedro), 4 somam 240° (octaedro) e 5 somam 300° (icosaedro). Seis dariam 360°: plano.</li>
+<li><strong>Quadrados</strong> (90°): 3 por vértice somam 270° (cubo). Quatro dariam 360°: plano.</li>
+<li><strong>Pentágonos</strong> (108°): 3 por vértice somam 324° (dodecaedro). Quatro passariam de 360°.</li>
+<li><strong>Hexágonos</strong> (120°): 3 já somam 360°. Daí em diante, nenhum polígono regular funciona.</li>
+</ul>
+<p>Sobram, portanto, exatamente cinco possibilidades. A prova aparece no <strong>Livro XIII dos <em>Elementos</em></strong>, de Euclides, escrito por volta de 300 a.C. Fontes antigas atribuem parte desse estudo a <strong>Teeteto</strong>, matemático ateniense contemporâneo de Platão.</p>
+<p>Há ainda uma curiosidade que você pode conferir contando: em todos eles, <strong>vértices − arestas + faces = 2</strong>. No cubo, 8 − 12 + 6 = 2. Essa relação ficou conhecida como fórmula de Euler, em homenagem ao matemático suíço Leonhard Euler, que a publicou no século XVIII.</p>
+
+<h2>Platão e os elementos da natureza</h2>
+<p>Os sólidos levam o nome de <strong>Platão</strong> porque ele os usou no diálogo <em>Timeu</em>, escrito por volta de 360 a.C., para descrever a estrutura do mundo. Segundo o texto, cada um dos quatro elementos seria formado por partículas com uma dessas formas:</p>
+<ul>
+<li><strong>Fogo — tetraedro:</strong> pontiagudo e leve, por isso “queima”.</li>
+<li><strong>Terra — cubo:</strong> o mais estável e firme.</li>
+<li><strong>Ar — octaedro:</strong> intermediário, móvel.</li>
+<li><strong>Água — icosaedro:</strong> o que mais “rola”, por ser quase redondo.</li>
+</ul>
+<p>Sobre o <strong>dodecaedro</strong>, Platão diz apenas que o deus o usou para o todo, para ornamentar o universo. Pensadores posteriores passaram a associá-lo ao <em>éter</em>, o quinto elemento ou “quintessência”, ligado aos céus. Hoje sabemos que a matéria não é feita dessas partículas, mas a ideia de que a natureza segue leis matemáticas foi uma intuição poderosa.</p>
+
+<h2>Kepler e o “mistério do cosmos”</h2>
+<p>Quase dois mil anos depois, em 1596, o astrônomo alemão <strong>Johannes Kepler</strong> publicou o livro <em>Mysterium Cosmographicum</em> (“O mistério cosmográfico”). Nele, propôs que as órbitas dos seis planetas conhecidos na época estariam encaixadas umas nas outras, separadas pelos cinco sólidos platônicos, um dentro do outro como bonecas russas.</p>
+<p>O modelo não correspondia às medições, e o próprio Kepler seguiu estudando até descobrir que as órbitas são <strong>elípticas</strong>, as famosas leis de Kepler. A história mostra bem a convivência entre beleza simbólica e ciência: a intuição inspirou a busca, mas foram os dados que deram a resposta.</p>
+
+<h2>Onde essas formas aparecem na natureza</h2>
+<ul>
+<li><strong>Cristais:</strong> o sal de cozinha (halita) cristaliza em cubos, e a fluorita costuma formar octaedros.</li>
+<li><strong>Vírus:</strong> muitos vírus têm a “cápsula” externa com simetria de icosaedro, uma forma eficiente de fechar um espaço com peças repetidas.</li>
+<li><strong>Organismos marinhos:</strong> os radiolários, seres microscópicos ilustrados pelo biólogo Ernst Haeckel, exibem esqueletos com formas que lembram vários poliedros.</li>
+</ul>
+
+<h2>O significado espiritual, segundo as tradições</h2>
+<p>A partir daqui entramos no campo simbólico. Na <a href="/guias/geometria-sagrada/">geometria sagrada</a> moderna, os cinco sólidos são vistos como “blocos de construção” da criação, e cada um ganhou associações que variam de autor para autor. As mais comuns, herdadas de Platão, são:</p>
+<ul>
+<li><strong>Tetraedro (fogo):</strong> iniciativa, transformação, coragem.</li>
+<li><strong>Cubo (terra):</strong> estabilidade, corpo, enraizamento.</li>
+<li><strong>Octaedro (ar):</strong> equilíbrio, mente, comunicação.</li>
+<li><strong>Icosaedro (água):</strong> fluidez, emoções, adaptação.</li>
+<li><strong>Dodecaedro (éter):</strong> espírito, o todo, o sagrado.</li>
+</ul>
+<p>Correntes esotéricas contemporâneas também ensinam que os cinco sólidos podem ser traçados dentro do <strong>Cubo de Metatron</strong>, figura derivada da <a href="/guias/flor-da-vida/">Flor da Vida</a>. Vale lembrar que essas leituras são interpretações espirituais: não há comprovação científica de que os sólidos tenham poderes, e eles não substituem cuidados com a saúde.</p>
+
+<h2>Prática: monte os cinco sólidos em papel</h2>
+<p>Construir as formas com as mãos é a melhor maneira de entendê-las e pode virar um momento tranquilo de concentração.</p>
+<ol>
+<li><strong>Separe o material:</strong> cartolina ou papel mais grosso, régua, lápis, tesoura e cola branca.</li>
+<li><strong>Desenhe as planificações:</strong> o tetraedro é uma tira de 4 triângulos; o cubo, a conhecida “cruz” de 6 quadrados; o octaedro, 8 triângulos; o icosaedro, 20 triângulos em faixa; o dodecaedro, duas “flores” de 6 pentágonos cada. Deixe pequenas abas nas bordas para colar.</li>
+<li><strong>Vinque antes de dobrar:</strong> passe a ponta da régua ou uma caneta sem tinta sobre as linhas de dobra.</li>
+<li><strong>Cole aos poucos:</strong> uma aresta por vez, segurando alguns segundos.</li>
+<li><strong>Observe e conte:</strong> confira faces, vértices e arestas e teste a fórmula V − A + F = 2 em cada um.</li>
+</ol>
+<p>Se quiser ir além, faça uma meditação curta segurando cada sólido e pensando no elemento associado a ele. O guia <a href="/guias/meditacao-para-iniciantes/">Meditação para iniciantes</a> explica como começar com poucos minutos por dia.</p>
+
+<h2>Leia também</h2>
+<p><a href="/guias/geometria-sagrada/">Geometria sagrada: guia completo para iniciantes</a> · <a href="/guias/flor-da-vida/">Flor da Vida</a> · <a href="/teia-universal/">Teia Universal</a></p>
+'''
+},
 ]
